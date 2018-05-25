@@ -1,0 +1,17 @@
+{
+    "template" : "nginx-*",
+    "version" : 3,
+    "settings" : {
+        "index.refresh_interval" : "5s"
+    },
+    "mappings" : {
+        "_default_" : {
+           "properties" : {
+               "location" : { "type" : "geo_point"},
+               "ip" : { "type" : "ip" },
+               "latitude" : { "type" : "half_float" },
+               "longitude" : { "type" : "half_float" }
+           } 
+        }
+    }
+}

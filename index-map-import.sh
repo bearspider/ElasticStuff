@@ -1,0 +1,1 @@
+curl -XPUT -H 'Content-Type: application/json' --data "@/path/to/elastic-geopoint-full.json" localhost:9200/_template/nginx_access
